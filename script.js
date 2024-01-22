@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     grayscaleToggle.addEventListener('change', function() {
-        const images = photoContainer.querySelectorAll('img'); //here
+        const images = photoContainer.querySelectorAll('img'); 
         images.forEach((image) => {
             if (grayscaleToggle.checked) {
                 applyGrayscale(image);
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function refreshPhotos() {
-        // Using the Lorem Picsum API to generate new random pictures
+     
         const images = photoContainer.querySelectorAll('.photo-item img');
         images.forEach((image) => {
             const randomImageId = Math.floor(Math.random() * 1000) + 1;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function addMorePhotos() {
-        // Using the Lorem Picsum API to generate 4 new random pictures
+        
         for (let i = 0; i < 4; i++) {
             const randomImageId = Math.floor(Math.random() * 1000) + 1;
             const imageUrl = `https://picsum.photos/id/${randomImageId}/375/375`;
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newPhotoItem.classList.add('photo-item');
             newPhotoItem.appendChild(newImage);
 
-            // Add overlay and text elements (similar to your existing structure)
+          
             addOverlayAndText(newPhotoItem);
 
             photoContainer.appendChild(newPhotoItem);
