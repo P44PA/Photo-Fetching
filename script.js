@@ -1,5 +1,4 @@
 
-//add fetch()
 document.addEventListener('DOMContentLoaded', function() {
     const photoContainer = document.getElementById('photoContainer');
     const generateBtn = document.getElementById('generateBtn');
